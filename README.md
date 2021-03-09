@@ -1,2 +1,2 @@
-# Yakovenko_JAVA
-дз по JAVA
+# Yakovenko_Android
+дз по Android
