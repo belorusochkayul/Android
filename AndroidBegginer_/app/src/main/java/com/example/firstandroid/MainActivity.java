@@ -6,30 +6,29 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends Activity implements View.OnClickListener {
+    private TextView textView1;
+    private TextView textView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final TextView textView1 = (TextView) findViewById(R.id.textView);
-        final Button btn = (Button) findViewById(R.id.button);
-        final TextView textView2 = (TextView) findViewById(R.id.textView2);
+        textView1 = (TextView) findViewById(R.id.textView);
+        textView2 = (TextView) findViewById(R.id.textView2);
 
-        btn.setOnClickListener(this);
+        findViewById(R.id.button).setOnClickListener(this);
         textView1.setOnClickListener(this);
         textView2.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        final TextView textView1 = (TextView) findViewById(R.id.textView);
-        final TextView textView2 = (TextView) findViewById(R.id.textView2);
-        final Button btn = (Button) findViewById(R.id.button);
+        textView1 = (TextView) findViewById(R.id.textView);
+        textView2 = (TextView) findViewById(R.id.textView2);
 
         String text1 = (String) textView1.getText();
         String text2 = (String) textView2.getText();
@@ -42,19 +41,19 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         color1 = getBackgroundColorFromTextView(background1, color1);
         color2 = getBackgroundColorFromTextView(background2, color2);
+        
 
-        if (v.getId() == R.id.button || v.getId() == R.id.textView || v.getId() == R.id.textView2) {
-            changeTextColor(textView1, textView2, text1, text2);
-            changeBackgroundColor(textView1, textView2, color1, color2);
-        }
-    }
+        changeTextColor(text1, text2);
+        changeBackgroundColor(color1, color2);
 
-    public void changeTextColor(TextView textView1, TextView textView2, String text1, String text2) {
+           }
+
+    public void changeTextColor(String text1, String text2) {
         textView1.setText(text2);
         textView2.setText(text1);
     }
 
-    public void changeBackgroundColor(TextView textView1, TextView textView2, int color1, int color2) {
+    public void changeBackgroundColor( int color1, int color2) {
         textView1.setBackgroundColor(color2);
         textView2.setBackgroundColor(color1);
     }
