@@ -8,14 +8,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class MainActivity extends Activity implements View.OnClickListener {
+public class TextChangeActivity extends Activity implements View.OnClickListener {
     private TextView textView1;
     private TextView textView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_textchange);
 
         textView1 = (TextView) findViewById(R.id.textView);
         textView2 = (TextView) findViewById(R.id.textView2);
@@ -41,7 +41,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         color1 = getBackgroundColorFromTextView(background1, color1);
         color2 = getBackgroundColorFromTextView(background2, color2);
-        
+
 
         changeTextColor(text1, text2);
         changeBackgroundColor(color1, color2);
