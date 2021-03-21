@@ -5,34 +5,33 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.ScrollView;
 
-public class MenuActivity extends Activity {
-    Button buttonTextChange, buttonFlags, buttonNextTask;
-    ScrollView scrollView;
-    LinearLayout linearLayout;
-
+public class MenuActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        buttonTextChange = (Button) findViewById(R.id.buttonTextExchange);
-        linearLayout = new LinearLayout(this);
-        scrollView = new ScrollView(this);
+        Button buttonTextChange = (Button) findViewById(R.id.buttonTextExchange);
+        Button buttonFlags = (Button) findViewById(R.id.buttonFlags);
 
-        buttonTextChange.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                switch (v.getId()) {
-                    case R.id.buttonTextExchange: {
-                        Intent intent = new Intent(MenuActivity.this, TextChangeActivity.class);
-                        startActivity(intent);
-                        break;
-                    }
-                }
+        buttonTextChange.setOnClickListener(this);
+        buttonFlags.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.buttonTextExchange: {
+                Intent intent = new Intent(MenuActivity.this, TextChangeActivity.class);
+                startActivity(intent);
+                break;
             }
-        });
+            case R.id.buttonFlags: {
+                Intent intent = new Intent(MenuActivity.this, FlagsActivity.class);
+                startActivity(intent);
+                break;
+            }
+        }
     }
 }
