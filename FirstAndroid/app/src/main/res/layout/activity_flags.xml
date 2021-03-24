@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/flags_height"
+                android:orientation="vertical"
+                android:background="@color/red">
+
+                <View
+                    android:id="@+id/Austria_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/red" />
+
+                <View
+                    android:id="@+id/Austria_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <View
+                    android:id="@+id/Austria_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/separator1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/flags_height"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/Poland_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <View
+                    android:id="@+id/Poland_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/red" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/separator2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/flags_height"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/Italy_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/madagascar_green" />
+
+                <View
+                    android:id="@+id/Italy_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <View
+                    android:id="@+id/Italy_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/red" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/separator3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/flags_height"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/Colombia_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:background="@color/yellow" />
+
+                <View
+                    android:id="@+id/Colombia_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/dark_blue" />
+
+                <View
+                    android:id="@+id/Colombia_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/red" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/separator4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/flags_height"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/Madagascar_1"
+                    android:layout_width="@dimen/madagasckar_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:background="@color/madagascar_green" />
+
+                <View
+                    android:id="@+id/Madagascar_2"
+                    android:layout_width="@dimen/madagasckar_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:background="@color/red" />
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/separator5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/flags_height"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/Thailand_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/dark_red" />
+
+                <View
+                    android:id="@+id/Thailand_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <View
+                    android:id="@+id/Thailand_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.85"
+                    android:background="@color/dark_blue" />
+
+                <View
+                    android:id="@+id/Thailand_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <View
+                    android:id="@+id/Thailand_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/dark_red" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/separator6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Danmark_height"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/Denmark_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/red" />
+
+                <View
+                    android:id="@+id/Denmark_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <View
+                    android:id="@+id/Denmark_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="@color/red" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/Denmark_4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Danmark_white_line_height"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Danmark_height"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/Denmark_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/red" />
+
+                <View
+                    android:id="@+id/Denmark_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <View
+                    android:id="@+id/Denmark_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="@color/red" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

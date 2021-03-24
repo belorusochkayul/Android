@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="textSyze">20dp</dimen>
+    <dimen name="separator_height">20dp</dimen>
+    <dimen name="separator_big_height">40dp</dimen>
+    <dimen name="textSyzeFlags">70dp</dimen>
+    <dimen name="madagasckar_width">400dp</dimen>
+    <dimen name="flags_height">300dp</dimen>
+    <dimen name="Danmark_height">120dp</dimen>
+    <dimen name="Danmark_white_line_height">60dp</dimen>
+    <dimen name="layout_margin">20dp</dimen>
+    <dimen name="layout_marginTop">20dp</dimen>
+    <dimen name="layout_margin_small_logo">7dp</dimen>
+    <dimen name="layout_marginBottom">10dp</dimen>
+    <dimen name="layout_height">60dp</dimen>
+    <dimen name="textSize">15dp</dimen>
+    <dimen name="textForgotSize">16dp</dimen>
+    </resources>
