@@ -6,8 +6,8 @@
    android:orientation="vertical">
 
        <ScrollView
-         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,7 +36,7 @@
                 android:text="@string/button_Flags_name" />
 
             <Button
-                android:id="@+id/buttonTask3"
+                android:id="@+id/buttonLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="@dimen/margin"

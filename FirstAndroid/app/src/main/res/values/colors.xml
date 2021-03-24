@@ -14,5 +14,8 @@
     <color name="dark_red">#cc1d00</color>
     <color name="madagascar_red">#e34234</color>
     <color name="madagascar_green">#029a30</color>
-
+    <color name="tan_color">#dbb583</color>
+    <color name="water_color">#0095b6</color>
+    <color name="gray">#c8c8c8</color>
+    <color name="GreyTransparent">#55A0A0A0</color>
 </resources>

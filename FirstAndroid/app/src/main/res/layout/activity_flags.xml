@@ -16,7 +16,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/flags_height"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="@color/red">
 
                 <View
                     android:id="@+id/Austria_1"
@@ -36,8 +37,7 @@
                     android:id="@+id/Austria_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/red" />
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <View

@@ -6,4 +6,9 @@
     <string name="button_TextExchange_name">TextExchangeActivity</string>
     <string name="button_Flags_name">FlagsActivity</string>
     <string name="button_next_task">NextTask</string>
+    <string name="button_create_account">Create Account</string>
+    <string name="button_log_in">Log in</string>
+    <string name="textView_user">Username</string>
+    <string name="textView_password">Password</string>
+    <string name="textView_message_forgot"><u>Forgot your username/password?</u></string>
 </resources>
