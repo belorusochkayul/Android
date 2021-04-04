@@ -17,4 +17,14 @@
     <dimen name="layout_height">60dp</dimen>
     <dimen name="textSize">15dp</dimen>
     <dimen name="textForgotSize">16dp</dimen>
+    <dimen name="commonPadding">20dp</dimen>
+    <dimen name="layout_marginBottom_">25dp</dimen>
+    <dimen name="layout_height_">32dp</dimen>
+    <dimen name="layout_photo_size">150dp</dimen>
+    <dimen name="layout_border_width">3dp</dimen>
+    <dimen name="layout_line_height">1dp</dimen>
+    <dimen name="layout_paddingBottom_">10dp</dimen>
+    <dimen name="layout_marginTop_">70dp</dimen>
+    <dimen name="textSyze_">28dp</dimen>
+    <dimen name="layout_marginLeft_">17dp</dimen>
     </resources>

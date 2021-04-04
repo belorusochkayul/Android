@@ -16,6 +16,7 @@ public class MenuActivity extends Activity implements View.OnClickListener {
         Button buttonFlags = (Button) findViewById(R.id.buttonFlags);
         Button buttonLogin = (Button) findViewById(R.id.buttonLogin);
 
+
         buttonTextChange.setOnClickListener(this);
         buttonFlags.setOnClickListener(this);
         buttonLogin.setOnClickListener(this);
@@ -37,6 +38,11 @@ public class MenuActivity extends Activity implements View.OnClickListener {
 
             case R.id.buttonLogin: {
                 Intent intent = new Intent(MenuActivity.this, LoginLinearActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.buttonImage: {
+                Intent intent = new Intent(MenuActivity.this, ImageActivity.class);
                 startActivity(intent);
                 break;
             }

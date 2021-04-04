@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.firstandroid">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstAndroid">
+
         <activity android:name=".MenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,9 +21,10 @@
         </activity>
 
         <activity android:name=".TextChangeActivity"></activity>
-
+        <activity android:name=".ProfileActivity"></activity>
         <activity android:name=".FlagsActivity"></activity>
-
         <activity android:name=".LoginLinearActivity"></activity>
+
     </application>
+
 </manifest>

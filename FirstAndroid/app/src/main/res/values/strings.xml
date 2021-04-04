@@ -10,5 +10,27 @@
     <string name="button_log_in">Log in</string>
     <string name="textView_user">Username</string>
     <string name="textView_password">Password</string>
+    <string name="textView_name">Dylan Conner</string>
+    <string name="textView_trophies">TROPHIES</string>
+    <string name="textView_following">FOLLOWING</string>
+    <string name="textView_followers">FOLLOWERS</string>
+    <string name="textView_trophies_quantity">4</string>
+    <string name="textView_following_quantity">54</string>
+    <string name="textView_followers_quantity">12</string>
+    <string name="textView_name_field">NAME</string>
+    <string name="textView_country_field">COUNTRY</string>
+    <string name="textView_postal_code_field">POSTAL CODE</string>
+    <string name="textView_date_of_birth_field">DATE OF BIRTH</string>
+    <string name="textView_gender_field">GENDER</string>
+    <string name="textView_height_field">HEIGHT</string>
+    <string name="textView_phone">PHONE</string>
+    <string name="textView_name_field_quantity">Nia Brockman</string>
+    <string name="textView_country_field_quantity">USA</string>
+    <string name="textView_postal_code_field_quantity">60604</string>
+    <string name="textView_date_of_birth_field_quantity">Feb. 21, 2000</string>
+    <string name="textView_gender_field_quantity">Male</string>
+    <string name="textView_height_field_quantity">6\'1\"</string>
+    <string name="textView_phone_quantity">(781) 547-3320</string>
+    <string name="edit_text_image_download">Enter the link to download image</string>
     <string name="textView_message_forgot"><u>Forgot your username/password?</u></string>
 </resources>
