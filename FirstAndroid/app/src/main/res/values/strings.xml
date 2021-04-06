@@ -24,6 +24,8 @@
     <string name="textView_gender_field">GENDER</string>
     <string name="textView_height_field">HEIGHT</string>
     <string name="textView_phone">PHONE</string>
+    <string name="button_download">START DOWNLOADING IMAGE</string>
+
     <string name="textView_name_field_quantity">Nia Brockman</string>
     <string name="textView_country_field_quantity">USA</string>
     <string name="textView_postal_code_field_quantity">60604</string>

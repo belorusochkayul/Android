@@ -14,11 +14,13 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        String imageUrl = "https://i.imgur.com/tGbaZCY.jpg";
-        ImageView userPhoto = (ImageView) findViewById(R.id.profilePhoto);
+        String imageUri = "https://i.imgur.com/tGbaZCY.jpg";
+        ImageView ivBasicImage = (ImageView) findViewById(R.id.profilePhoto);
         Picasso.get()
-                .load(imageUrl)
-                .into(userPhoto);
+                .load(imageUri)
+                .into(ivBasicImage);
+
+              
 
     }
 }

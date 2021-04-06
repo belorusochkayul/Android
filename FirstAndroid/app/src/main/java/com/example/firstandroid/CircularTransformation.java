@@ -10,9 +10,6 @@ import android.graphics.Shader;
 import com.squareup.picasso.Transformation;
 public class CircularTransformation implements Transformation {
 
-    public CircularTransformation() {
-    }
-
     @Override
     public Bitmap transform(final Bitmap source) {
         final Paint paint = new Paint();
