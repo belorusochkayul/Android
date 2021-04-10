@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_margin">
+
+    <ImageView
+        android:id="@+id/logo_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/layout_marginTop"
+        android:layout_marginBottom="@dimen/separator_big_height"
+        app:srcCompat="@drawable/login_logo" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/separator_height"
+        android:background="@drawable/gray_background"
+        android:drawableLeft="@drawable/ic_login_name"
+        android:fontFamily="@font/monda_regular"
+        android:hint="@string/textView_user"
+        android:paddingLeft="@dimen/layout_padding_small_logo"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/textSyze" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/separator_big_height"
+        android:background="@drawable/gray_background"
+        android:drawableLeft="@drawable/ic_login_password"
+        android:fontFamily="@font/monda_regular"
+        android:hint="@string/textView_password"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/layout_padding_small_logo"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/textSyze" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/log_in"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:layout_marginBottom="@dimen/separator_height"
+        android:background="@color/water_color"
+        android:fontFamily="@font/monda_bold"
+        android:gravity="center"
+        android:text="@string/button_log_in"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSyze" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/separator_height"
+        android:fontFamily="@font/monda_regular"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/textView_message_forgot"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textForgotSize" />
+
+    <View
+        android:id="@+id/separator6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/separator_height"
+        android:layout_weight="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/create_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:layout_marginBottom="@dimen/layout_marginBottom"
+        android:background="@color/tan_color"
+        android:fontFamily="@font/monda_bold"
+        android:gravity="center"
+        android:text="@string/button_create_account"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSyze" />
+
+</LinearLayout>
