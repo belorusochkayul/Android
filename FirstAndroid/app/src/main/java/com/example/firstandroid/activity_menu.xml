@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+   android:orientation="vertical">
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonTextExchange"
+                style="@style/ByttonMenuStyle"
+                android:text="@string/button_TextExchange_name"/>
+
+            <Button
+                android:id="@+id/buttonFlags"
+                style="@style/ByttonMenuStyle"
+                android:text="@string/button_Flags_name"/>
+
+            <Button
+                android:id="@+id/buttonLogin"
+                style="@style/ByttonMenuStyle"
+                android:text="@string/login_activity"/>
+
+            <Button
+                android:id="@+id/buttonImage"
+                style="@style/ByttonMenuStyle"
+                android:text="@string/image_activity"/>
+
+            <Button
+                android:id="@+id/buttonProfile"
+                style="@style/ByttonMenuStyle"
+                android:text="@string/profile_activity"/>
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="Button" />
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="Button" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
