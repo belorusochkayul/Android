@@ -27,9 +27,6 @@ public class TextChangeActivity extends Activity implements View.OnClickListener
 
     @Override
     public void onClick(View v) {
-        textView1 = (TextView) findViewById(R.id.textView);
-        textView2 = (TextView) findViewById(R.id.textView2);
-
         String text1 = (String) textView1.getText();
         String text2 = (String) textView2.getText();
 
@@ -41,7 +38,6 @@ public class TextChangeActivity extends Activity implements View.OnClickListener
 
         color1 = getBackgroundColorFromTextView(background1, color1);
         color2 = getBackgroundColorFromTextView(background2, color2);
-
 
         changeTextColor(text1, text2);
         changeBackgroundColor(color1, color2);
