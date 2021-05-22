@@ -16,53 +16,28 @@
 
             <Button
                 android:id="@+id/buttonTextExchange"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/margin"
-                android:layout_marginLeft="@dimen/margin"
-                android:layout_marginTop="@dimen/margin"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:textSize="@dimen/textSyze"
-                android:text="@string/button_TextExchange_name" />
+                style="@style/ByttonMenuStyle"
+                android:text="@string/button_TextExchange_name"/>
 
             <Button
                 android:id="@+id/buttonFlags"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/margin"
-                android:layout_marginLeft="@dimen/margin"
-                android:layout_marginTop="@dimen/margin"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:text="@string/button_Flags_name" />
+                style="@style/ByttonMenuStyle"
+                android:text="@string/button_Flags_name"/>
 
             <Button
                 android:id="@+id/buttonLogin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/margin"
-                android:layout_marginLeft="@dimen/margin"
-                android:layout_marginTop="@dimen/margin"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:text="Button" />
+                style="@style/ByttonMenuStyle"
+                android:text="@string/login_activity"/>
 
             <Button
                 android:id="@+id/buttonImage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/margin"
-                android:layout_marginLeft="@dimen/margin"
-                android:layout_marginTop="@dimen/margin"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:text="Button" />
+                style="@style/ByttonMenuStyle"
+                android:text="@string/image_activity"/>
 
             <Button
-                android:id="@+id/button18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/margin"
-                android:layout_marginLeft="@dimen/margin"
-                android:layout_marginTop="@dimen/margin"
-                android:text="Button" />
+                android:id="@+id/buttonProfile"
+                style="@style/ByttonMenuStyle"
+                android:text="@string/profile_activity"/>
 
             <Button
                 android:id="@+id/button17"

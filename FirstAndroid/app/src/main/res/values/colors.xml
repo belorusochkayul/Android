@@ -18,4 +18,16 @@
     <color name="water_color">#0095b6</color>
     <color name="gray">#c8c8c8</color>
     <color name="GreyTransparent">#55A0A0A0</color>
+    <color name="colorPrimary">#607d8b</color>
+    <color name="colorPrimaryDark">#546e7a</color>
+    <color name="colorAccent">#40c4ff</color>
+    <color name="windowBackground">#455a64</color>
+
+    <color name="slice_color_1">#cc1d00</color>
+    <color name="slice_color_2">#76ced4</color>
+    <color name="slice_color_3">#b5d275</color>
+
+
+
+
 </resources>

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">FirstAndroid</string>
     <string name="textView1_name">spring</string>
     <string name="textView2_name">is</string>
@@ -8,8 +8,8 @@
     <string name="button_next_task">NextTask</string>
     <string name="button_create_account">Create Account</string>
     <string name="button_log_in">Log in</string>
-    <string name="textView_user">Username</string>
-    <string name="textView_password">Password</string>
+    <string name="textView_user">\u0020 Username</string>
+    <string name="textView_password">\u0020 Password</string>
     <string name="textView_name">Dylan Conner</string>
     <string name="textView_trophies">TROPHIES</string>
     <string name="textView_following">FOLLOWING</string>
@@ -25,14 +25,22 @@
     <string name="textView_height_field">HEIGHT</string>
     <string name="textView_phone">PHONE</string>
     <string name="button_download">START DOWNLOADING IMAGE</string>
-
     <string name="textView_name_field_quantity">Nia Brockman</string>
     <string name="textView_country_field_quantity">USA</string>
     <string name="textView_postal_code_field_quantity">60604</string>
     <string name="textView_date_of_birth_field_quantity">Feb. 21, 2000</string>
     <string name="textView_gender_field_quantity">Male</string>
+    <string name="flags_activity">Flags activiy</string>
+    <string name="image_activity">Image activiy</string>
+    <string name="login_activity">LoginLiner activiy</string>
+    <string name="text_change_activity">TextChange activiy</string>
+    <string name="profile_activity">Profile activiy</string>
     <string name="textView_height_field_quantity">6\'1\"</string>
     <string name="textView_phone_quantity">(781) 547-3320</string>
     <string name="edit_text_image_download">Enter the link to download image</string>
     <string name="textView_message_forgot"><u>Forgot your username/password?</u></string>
+    <string name="edit_text_pie_chart">Enter values</string>
+    <string name="button_pie_chart_ent">SHOW</string>
+
+
 </resources>

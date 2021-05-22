@@ -11,8 +11,10 @@
     <dimen name="Danmark_height">120dp</dimen>
     <dimen name="Danmark_white_line_height">60dp</dimen>
     <dimen name="layout_margin">20dp</dimen>
+    <dimen name="layout_padding">20dp</dimen>
     <dimen name="layout_marginTop">20dp</dimen>
     <dimen name="layout_margin_small_logo">7dp</dimen>
+    <dimen name="layout_padding_small_logo">22dp</dimen>
     <dimen name="layout_marginBottom">10dp</dimen>
     <dimen name="layout_height">60dp</dimen>
     <dimen name="textSize">15dp</dimen>
@@ -28,4 +30,7 @@
     <dimen name="layout_marginTop_">70dp</dimen>
     <dimen name="textSyze_">28dp</dimen>
     <dimen name="layout_marginLeft_">17dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
     </resources>
