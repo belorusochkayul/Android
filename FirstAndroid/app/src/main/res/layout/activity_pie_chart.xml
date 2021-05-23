@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".PieChartMainActivity">
+
+    <com.example.firstandroid.PieChartt
+        android:id="@+id/pie_chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iconSize="56dp"
+        app:innerHoleWeight="0"
+        app:textSize="16sp" />
+
+    <Button
+        android:id="@+id/draw_diagram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHOW" />
+
+    <EditText
+        android:id="@+id/input_percent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/draw_diagram"
+        android:ems="10"
+        android:hint="Input percent value" />
+
+    <EditText
+        android:id="@+id/noData"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@null"
+        android:visibility="gone"
+        android:text="NO DATA"
+        android:layout_gravity="center_horizontal" />
+
+</RelativeLayout>
