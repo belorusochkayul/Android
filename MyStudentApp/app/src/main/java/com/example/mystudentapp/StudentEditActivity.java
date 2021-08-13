@@ -19,8 +19,11 @@ public class StudentEditActivity extends AppCompatActivity {
         if (value) {
             EditText name = this.findViewById(R.id.name);
             EditText desc = this.findViewById(R.id.desc);
+           // EditText url = this.findViewById(R.id.url);
+
             name.setText(getIntent().getStringExtra("name"));
             desc.setText(getIntent().getStringExtra("desc"));
+          //  url.setText(getIntent().getStringExtra("url"));
         }
         this.index = getIntent().getIntExtra("index", 0);
     }
