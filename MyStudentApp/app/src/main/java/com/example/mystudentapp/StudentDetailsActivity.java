@@ -18,7 +18,7 @@ public class StudentDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_student_details);
 
         int index = getIntent().getIntExtra("index", 0);
-        Student item = StudentRepository.getStudent().get(index);
+        Student item = StudentRepository.getInstance().get(index);
 
         TextView name = findViewById(R.id.name);
         name.setText(item.getName());
@@ -31,27 +31,25 @@ public class StudentDetailsActivity extends AppCompatActivity {
         ImageButton editButton = findViewById(R.id.editButton);
         editButton.setOnClickListener((View v) -> {
                     Intent intent = new Intent(this.getApplicationContext(), StudentEditActivity.class);
-                    intent.putExtra("edit", true);
-                    intent.putExtra("index", index);
-                    intent.putExtra("name", StudentRepository.getStudent().get(index).getName());
-                    intent.putExtra("desc", StudentRepository.getStudent().get(index).getDesc());
+                    StudentRepository.getInstance().get(index);
+
+
+
                     startActivity(intent);
                 }
         );
 
         Button delete = findViewById(R.id.delete);
         delete.setOnClickListener((View v) -> {
-
             Intent intent = new Intent(this.getApplicationContext(), StudentEditActivity.class);
-            intent.putExtra("index", index);
-            intent.putExtra("delete", StudentRepository.getStudent().getAll().remove(item));
-            Intent intent1 = new Intent(this.getApplicationContext(), StudentListActivity.class);
-            startActivity(intent1);
+            StudentRepository.getInstance().getAll().remove(item);
+            StudentDetailsActivity.this.finish();
+
         });
     }
 
 //   public void onDawnloadImg(){
-//        String userInputUrl = urlEditText.getText().toString();
+//       Student item = StudentRepository.getInstance().get(index);
 //        Picasso
 //                .get()
 //                .load(userInputUrl)
@@ -63,8 +61,6 @@ public class StudentDetailsActivity extends AppCompatActivity {
 //                    }
 //                    @Override
 //                    public void onError(Exception e) {
-//                    }
-//
 //                });
 //   }
 }

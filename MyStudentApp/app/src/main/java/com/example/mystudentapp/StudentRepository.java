@@ -5,12 +5,17 @@ import java.util.List;
 
 public class StudentRepository {
     private static final StudentRepository INST = new StudentRepository();
-    private final List<Student> items = new ArrayList<>();
+    private  List<Student> items = new ArrayList<>();
 
-    public StudentRepository() {
+    private StudentRepository() {
+        items.add(new Student("Gleb","33 year"));
+        items.add(new Student("Sergey","30 year"));
+        items.add(new Student("Danyta","18 year"));
+        items.add(new Student("Polyna","34 year"));
+        items.add(new Student("Tema","18 year"));
     }
 
-    public static StudentRepository getStudent() {
+    public static StudentRepository getInstance() {
         return INST;
     }
 

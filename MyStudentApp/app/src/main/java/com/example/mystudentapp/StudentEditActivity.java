@@ -1,48 +1,47 @@
 package com.example.mystudentapp;
-import android.content.Intent;
+
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class StudentEditActivity extends AppCompatActivity {
-    boolean value;
-    int index;
+    private int index;
+    EditText name, desc;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_edit);
-
-        this.value = getIntent().getBooleanExtra("edit", false);
-        if (value) {
-            EditText name = this.findViewById(R.id.name);
-            EditText desc = this.findViewById(R.id.desc);
-           // EditText url = this.findViewById(R.id.url);
-
-            name.setText(getIntent().getStringExtra("name"));
-            desc.setText(getIntent().getStringExtra("desc"));
-          //  url.setText(getIntent().getStringExtra("url"));
+        name = this.findViewById(R.id.name);
+        desc = this.findViewById(R.id.desc);
+        //url
+        this.index = getIntent().getIntExtra("index", -1);
+        if (index != -1) {
+            Student item = StudentRepository.getInstance().get(index);
+            name.setText(item.getName());
+            desc.setText(item.getDesc());
+            //  url
         }
-        this.index = getIntent().getIntExtra("index", 0);
+
+        Button buttonSave = this.findViewById(R.id.save);
+        buttonSave.setOnClickListener(v -> save(v));
     }
 
-    public void save(View view) {
-        EditText name = this.findViewById(R.id.name);
-        EditText desc = this.findViewById(R.id.desc);
 
-        if (value) {
-            Student item = StudentRepository.getStudent().get(index);
+    public void save(View view) {
+        if (index != -1) {
+            Student item = StudentRepository.getInstance().get(index);
             item.setName(name.getText().toString());
             item.setDesc(desc.getText().toString());
-            StudentRepository.getStudent().replace(index, item);
+            StudentRepository.getInstance().replace(index, item);
         } else {
             Student item = new Student(name.getText().toString(), desc.getText().toString());
-            StudentRepository.getStudent().add(item);
+            StudentRepository.getInstance().add(item);
         }
-
-        Intent intent = new Intent(this.getApplicationContext(), StudentListActivity.class);
-        startActivity(intent);
+        finish();
     }
 }

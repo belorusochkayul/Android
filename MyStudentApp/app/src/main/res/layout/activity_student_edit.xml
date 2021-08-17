@@ -34,10 +34,9 @@
         android:onClick="save" />
 
     <Button
-        android:id="@+id/add"
+        android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-       android:layout_gravity="center"
-        android:onClick="save"
+        android:layout_gravity="center"
         android:text="Сохранить" />
 </LinearLayout>
