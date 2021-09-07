@@ -24,7 +24,7 @@ public class StudentListActivity extends AppCompatActivity {
     private RecyclerView.Adapter adapter = new StudentAdapter(this);
     private RecyclerView studentRecycler;
     EditText searchView;
-    CharSequence search = "";
+    CharSequence нsearch = "";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
